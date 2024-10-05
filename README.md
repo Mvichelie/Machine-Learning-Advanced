@@ -62,9 +62,12 @@ Lang=Thai Style: Normal Text, 200 DPI
 Training Data: Thai normal text, 200 dpi
 Testing Data: Thai normal text, 200 dpi
 run this :
+
 python split_dataset.py --data_dir /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-TrainigSet --output_dir ./output --language Thai --resolutions 200 --styles normal
 
+
 python train_model.py --train_file ./output/train_files.txt --val_file ./output/val_files.txt --output_dir ./output --epochs 20 --batch_size 32 --learning_rate 0.001
+
 
 python evaluate_model.py --val_file ./output/val_files.txt --output_dir ./output --batch_size 32 --img_height 64 --img_width 64
 
