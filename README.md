@@ -1,4 +1,4 @@
-# Machine-Learning-Advanced
+# Machine-Learning-Advanced Assignment 1 
 To split the data set, I have a script called split_dataset.py. 
 run this in the terminal:
 python split_dataset.py --data_dir /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-TrainigSet --output_dir ./output --language Thai --train_ratio 0.7 --val_ratio 0.2
