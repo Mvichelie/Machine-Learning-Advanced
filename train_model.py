@@ -69,7 +69,7 @@ class OCRModel(nn.Module):
         self.conv1 = nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1)
         self.conv2 = nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1)
         self.pool = nn.MaxPool2d(2, 2)
-        self.fc1 = nn.Linear(64 * (img_dims[0]//2) * (img_dims[1]//2), 128)  # Updated to match input size
+        self.fc1 = nn.Linear(64 * (img_dims[0]//2) * (img_dims[1]//2), 128)  
         self.fc2 = nn.Linear(128, num_classes)
         self.relu = nn.ReLU()
 
@@ -115,7 +115,7 @@ def train_model(train_loader, val_loader, num_epochs=10, learning_rate=0.001, nu
     torch.save(model.state_dict(), model_path)
     print(f"Model saved  {model_path}")
 
-# Main function to handle arguments and run the training script
+# main function to handle arguments and to  run the training script
 def main():
     parser = argparse.ArgumentParser(description="Train an OCR model with resolution and style handling.")
     parser.add_argument('--train_file', type=str, required=True, help="Path to the training file list.")
