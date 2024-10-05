@@ -1,4 +1,7 @@
 # Machine-Learning-Advanced Assignment 1 
+Note, I have all of my scripts  and the output files in the server in my home as well the the ocd_model.pth. These are all located in a folder named scripts. I cannot push it here due to some access permissions. I have only run those scripts through the terminal and the server. 
+
+
 To split the data set, I have a script called split_dataset.py. 
 run this in the terminal:
 
