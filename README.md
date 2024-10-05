@@ -65,6 +65,11 @@ python train_model.py --train_file ./output/train_files.txt --val_file ./output/
 
 python evaluate_model.py --val_file ./output/val_files.txt --output_dir ./output --batch_size 32 --img_height 64 --img_width 64
 
+When I run this experiment this is what i got:
+Accuracy: 0.9361
+Precision: 0.9387
+Recall: 0.9361
+F1 Score: 0.9355
 
 For both languages:
 python split_dataset.py --data_dir /scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-TrainigSet --output_dir ./output --language both --resolutions 200 300 400 --styles normal
@@ -73,5 +78,8 @@ python train_model.py --train_file ./output/train_files.txt --val_file ./output/
 
 python evaluate_model.py --val_file ./output/val_files.txt --output_dir ./output --batch_size 32 --img_height 64 --img_width 64
 
+
+##Challenges
+I had a lot of trouble with the OCR model dimensions both during trianing and evaluating. I had come accross several errors with wrong dimension sizes numerous times before I was able to proceed. I had to rely on the demos from the class and several other resources in order to make sure I know what is going on. 
 
 
